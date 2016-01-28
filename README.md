@@ -2,6 +2,7 @@
 OpenAPS small enough that you don't have to carry a Murse
 WIP
 
+(http://ecx.images-amazon.com/images/I/41V0l2-6V8L.jpg)
 
-# Note:
-# I want to get in early on this one!  :-D
+Note:
+I want to get in early on this one!  :-D
