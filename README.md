@@ -12,7 +12,7 @@ I used a combination of the TI stick, Intel Edison and Sparkfun base board, a ba
 
 There are plenty of other setups to consider, so you should check them out [here](https://github.com/oskarpearson/mmeowlink/wiki) and [here](https://github.com/openaps/docs).
 
-###Setting up the software
+###Getting the software set up
 1. Set up your Edison
   * [Prepare the Edison for OpenAPS] (https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
   * [Install OpenAPS] (https://github.com/openaps/docs) by starting at Section 1, Point 4. 
@@ -43,6 +43,6 @@ gem install serialport
   * Run the tuner to make sure it works and to set up a frequency for the first time ```openaps mmtune```. It may show errors, but if it gives a frequency it's probably safe to ignore the errors.
   * Optional: Add the tuner as part of your preflight loop to get the best connection every time. ```openaps add preflight 'bash -c "rm -f monitor/clock.json && openaps mmtune && echo -n \"PREFLIGHT \" && openaps report invoke monitor/clock.json 2>/dev/null >/dev/null && grep -q T monitor/clock.json && echo OK || ( echo FAIL; openaps get-bg; sleep 120; exit 1 )"'```. Be sure to remove your old preflight if you have one first and then make sure it's added into whatever your cron sequence is.
 
-###Setting up the hardware to fit in your pocket
+###Packaging the hardware to fit in your pocket
 * Watch this short video
 
