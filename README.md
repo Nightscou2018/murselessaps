@@ -27,8 +27,9 @@ There are plenty of other setups to consider, so you should check them out [here
     * Flash it. If using Linux that'd be ```cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex``` NOTE: If you get [this error](http://sourceforge.net/p/cctool/discussion/general/thread/8f70cec7/) then you can edit cc-tool/programmer/cc_programmer.cpp and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file and recompile the tool by running ```make``` in the cc-tool directory.
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
   * Install the tuner which tunes the radio frequency to best match your pump
-  * Run the tuner to make sure it works
-  * Add the tuner as part of your preflight loop
+  * Add mmtune to your aliases ```openaps alias add mmtune "! bash -c \"cd ~/src/minimed_rf/ && ruby -I lib bin/mmtune /dev/ACM0 XXXXXX | egrep -v 'rssi:|OK|Ver|Open'\""```. Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
+  * Run the tuner to make sure it works ```openaps mmtune```. It should select a frequency. It may show errors, but if it gives a frequency it's probably safe to ignore the errors.
+  * Optional: Add the tuner as part of your preflight loop to get the best connection every time. ```openaps add preflight 'bash -c "rm -f monitor/clock.json && openaps mmtune && echo -n \"PREFLIGHT \" && openaps report invoke monitor/clock.json 2>/dev/null >/dev/null && grep -q T monitor/clock.json && echo OK || ( echo FAIL; openaps get-bg; sleep 120; exit 1 )"'```
 
 ###Setting up the hardware to fit in your pocket
 * Watch this short video
