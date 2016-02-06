@@ -10,6 +10,8 @@
 I used a combination of the TI stick, Intel Edison and Sparkfun base board, along with a few other things. I was able to order everything from Amazon using Same Day delivery options except the TI Stick and CC Debugger which I got from ti.com. They have default shipping of 2 day air for $7.
 * [Purchase List](http://amzn.com/w/10OD9UTHX6TTK)
 
+There are plenty of other setups to consider, so you should check them out [here](https://github.com/oskarpearson/mmeowlink/wiki) and [here](https://github.com/openaps/docs).
+
 ###Setting up the software
 1. Set up your Edison
   * [Prepare the Edison for OpenAPS] (https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
