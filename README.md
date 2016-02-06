@@ -19,7 +19,7 @@ There are plenty of other setups to consider, so you should check them out [here
 2. Set up your TI Stick
   * Write the firmware to the TI-stick
     * Install CC-Tool and a few other needed items with ```sudo apt-get install libusb-1.0-0-dev libboost-all-dev sdcc```. PC/Mac are other options which can use the [TI Flash Programmer Tool instead] (http://www.ti.com/tool/flash-programmer).
-    * Grab the [current hex file]() which you plan to flash onto the TI stick
+    * Grab the [current hex file](https://github.com/ps2/subg_rfspy/releases) which you plan to flash onto the TI stick. If you are in the US and for our TI stick here it'd be usb_ep0_TI_DONGLE_US_STDLOC.hex.
     * Plug your CC-Debugger that you purchased or borrowed into your your machine running CC-Tool or TI Flash Programmer Tool.
     * Plug your TI stick's USB into power.
     * Plug the other end onto your TI stick labeled DEBUG with the right stripe inwards towards the USB end of the board.
