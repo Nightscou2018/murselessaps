@@ -40,12 +40,12 @@ Apt-get ruby-colorize
 gem install serialport
 ```
   * Add mmtune to your aliases 
-  ```
-  openaps alias add mmtune "! bash -c \"cd ~/src/minimed_rf/ && ruby -I lib bin/mmtune /dev/ttyACM0 XXXXXX | egrep -v 'rssi:|OK|Ver|Open'\""
-  ```
+```
+openaps alias add mmtune "! bash -c \"cd ~/src/minimed_rf/ && ruby -I lib bin/mmtune /dev/ttyACM0 XXXXXX | egrep -v 'rssi:|OK|Ver|Open'\""
+```
   * Run the tuner to make sure it works and to set up a frequency for the first time ```openaps mmtune```. It may show errors, but if it gives a frequency it's probably safe to ignore the errors.
   * Optional: Add the tuner as part of your preflight loop to get the best connection every time. 
-  ```
+```
 openaps add preflight 'bash -c "rm -f monitor/clock.json && openaps mmtune && echo -n \"PREFLIGHT \" && openaps report invoke monitor/clock.json 2>/dev/null >/dev/null && grep -q T monitor/clock.json && echo OK || ( echo FAIL; openaps get-bg; sleep 120; exit 1 )"'
 ``` 
 Be sure to remove your old preflight if you have one first and then make sure it's added into whatever your cron sequence is.
