@@ -3,12 +3,12 @@
 ![murse photo](http://ecx.images-amazon.com/images/I/41V0l2-6V8L.jpg)
 
 ### Goals
-1. Make the form factors as small as possible, while
+1. Form factors as small as possible, while
 2. Not having to use a soldering iron
-3. Have at least a full day (16-18 hours) of battery life
+3. Have at least a full day (16 hours) of battery life
 
 I used a combination of the TI stick, Intel Edison and Sparkfun base board, a battery that has pass-through charging (so you can charger it will keeping your Edison up and running), along with a few other tools and connectors. I was able to order everything from Amazon using Same Day delivery options except the TI Stick and CC Debugger which I got from ti.com. They have default shipping of 2 day air for $7.
-* [Purchase List](http://amzn.com/w/10OD9UTHX6TTK)
+* V1 [Purchase List](http://amzn.com/w/10OD9UTHX6TTK)
 
 There are plenty of other setups to consider, so you should check them out [here](https://github.com/oskarpearson/mmeowlink/wiki) and [here](https://github.com/openaps/docs).
 
@@ -44,5 +44,5 @@ gem install serialport
   * Optional: Add the tuner as part of your preflight loop to get the best connection every time. ```openaps add preflight 'bash -c "rm -f monitor/clock.json && openaps mmtune && echo -n \"PREFLIGHT \" && openaps report invoke monitor/clock.json 2>/dev/null >/dev/null && grep -q T monitor/clock.json && echo OK || ( echo FAIL; openaps get-bg; sleep 120; exit 1 )"'```. Be sure to remove your old preflight if you have one first and then make sure it's added into whatever your cron sequence is.
 
 ###Packaging the hardware to fit in your pocket
-* Watch this short video
+* [Murseless v1 setup video] () - Feedback encouraged!
 
