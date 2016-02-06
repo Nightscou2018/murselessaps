@@ -22,7 +22,7 @@ There are plenty of other setups to consider, so you should check them out [here
     * Grab the [current hex file]() which you plan to flash onto the TI stick
     * Plug your CC-Debugger that you purchased or borrowed into your your machine running Linux with a USB cable that carries data.
     * Plug your TI stick's USB into power.
-    * Plug the other end onto your TI stick labeled Debug with the right stripe inwards towards the USB end of the board.
+    * Plug the other end onto your TI stick labeled DEBUG with the right stripe inwards towards the USB end of the board.
     * Press the reset button on your CC-Debugger. Make sure it is a green light before moving on.
     * Flash it ```cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex``` If you get [this error](http://sourceforge.net/p/cctool/discussion/general/thread/8f70cec7/) then you can edit cc-tool/programmer/cc_programmer.cpp and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file and recompile the tool by running ```make``` in the cc-tool directory
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
