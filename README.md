@@ -12,11 +12,11 @@ I used a combination of the TI stick, Intel Edison and Sparkfun base board, alon
 
 ###Setting up the software
 1. Set up your Edison
-..* [(https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
+* [(https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
 2. Set up your TI Stick
-..* Grab the current hex file
-..* Write the firmware to the stick using [CC-Tool] on Linux. You could also use the [TI Flash Programmer Tool](http://www.ti.com/tool/flash-programmer) on a PC (but I have not tested this).
-..* [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison
+* Grab the current hex file
+* Write the firmware to the stick using [CC-Tool] on Linux. You could also use the [TI Flash Programmer Tool](http://www.ti.com/tool/flash-programmer) on a PC (but I have not tested this).
+* [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison
 
 ###Setting up the hardware
 
