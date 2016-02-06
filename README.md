@@ -27,7 +27,8 @@ There are plenty of other setups to consider, so you should check them out [here
     * Flash it. If using Linux that'd be ```cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex``` NOTE: If you get [this error](http://sourceforge.net/p/cctool/discussion/general/thread/8f70cec7/) then you can edit cc-tool/programmer/cc_programmer.cpp and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file and recompile the tool by running ```make``` in the cc-tool directory.
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
   * Install mmtune (which tunes the radio frequency on the stick to best match your pump)
-```git clone https://github.com/ps2/minimed_rf
+```
+git clone https://github.com/ps2/minimed_rf
 cd minimed_rf
 Sudo apt-get install ruby-full
 sudo gem install bundler
@@ -36,7 +37,8 @@ ruby -I lib bin/mmtune /dev/ttyMFD1 123456
 
 If not working, you may need:
 Apt-get ruby-colorize
-gem install serialport```
+gem install serialport
+```
   * Add mmtune to your aliases ```openaps alias add mmtune "! bash -c \"cd ~/src/minimed_rf/ && ruby -I lib bin/mmtune /dev/ttyACM0 XXXXXX | egrep -v 'rssi:|OK|Ver|Open'\""```. Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
   * Run the tuner to make sure it works and to set up a frequency for the first time ```openaps mmtune```. It may show errors, but if it gives a frequency it's probably safe to ignore the errors.
   * Optional: Add the tuner as part of your preflight loop to get the best connection every time. ```openaps add preflight 'bash -c "rm -f monitor/clock.json && openaps mmtune && echo -n \"PREFLIGHT \" && openaps report invoke monitor/clock.json 2>/dev/null >/dev/null && grep -q T monitor/clock.json && echo OK || ( echo FAIL; openaps get-bg; sleep 120; exit 1 )"'```. Be sure to remove your old preflight if you have one first and then make sure it's added into whatever your cron sequence is.
