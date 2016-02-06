@@ -16,6 +16,7 @@ There are plenty of other setups to consider, so you should check them out [here
 1. Set up your Edison
   * [Prepare the Edison for OpenAPS] (https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
   * [Install OpenAPS] (https://github.com/openaps/docs) by starting at Section 1, Point 4. 
+  * Note, my setup using a Dexcom G5 which is connected to the G5 ios app via Ble. From there I am sharing to Nightscout. My openaps implentation pulls BG values from NS. I do not have a Dexcom Receiver as part of the setup, nor can I do offline mode at this time. Later I am hoping to use Ble on the Edison to receive BG values from the Dexcom G5 transmitted directly.
 2. Set up your TI Stick
   * Write the firmware to the TI-stick
     * Install CC-Tool and a few other needed items with ```sudo apt-get install libusb-1.0-0-dev libboost-all-dev sdcc```. PC/Mac are other options which can use the [TI Flash Programmer Tool instead] (http://www.ti.com/tool/flash-programmer).
