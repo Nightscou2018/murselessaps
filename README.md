@@ -24,7 +24,6 @@ There are plenty of other setups to consider, so you should check them out [here
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
   * Install the tuner
   * Run the tuner to make sure it works
-  * If you previously set up OpenAPS for a carelink, then you will need to make some changes to your openaps.ini. Follow these instructions
 
 ###Setting up the hardware to fit in your pocket
 * Watch this short video
