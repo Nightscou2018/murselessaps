@@ -27,7 +27,7 @@ There are plenty of other setups to consider, so you should check them out [here
     * Flash it. If using Linux that'd be ```cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex``` NOTE: If you get [this error](http://sourceforge.net/p/cctool/discussion/general/thread/8f70cec7/) then you can edit cc-tool/programmer/cc_programmer.cpp and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file and recompile the tool by running ```make``` in the cc-tool directory.
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
   * Install mmtune (which tunes the radio frequency on the stick to best match your pump)
-    ```git clone https://github.com/ps2/minimed_rf
+```git clone https://github.com/ps2/minimed_rf
 cd minimed_rf
 Sudo apt-get install ruby-full
 sudo gem install bundler
