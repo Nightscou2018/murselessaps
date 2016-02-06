@@ -24,7 +24,7 @@ There are plenty of other setups to consider, so you should check them out [here
     * Plug your TI stick's USB into power.
     * Plug the other end onto your TI stick labeled DEBUG with the right stripe inwards towards the USB end of the board.
     * Press the reset button on your CC-Debugger. Make sure it is a green light before moving on.
-    * Flash it. If using Linux that'd be ```cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex``` NOTE: If you get [this error](http://sourceforge.net/p/cctool/discussion/general/thread/8f70cec7/) then you can edit cc-tool/programmer/cc_programmer.cpp and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file and recompile the tool by running ```make``` in the cc-tool directory.
+    * Flash it. If using Linux that'd be ```sudo cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex``` NOTE: If you get [this error](http://sourceforge.net/p/cctool/discussion/general/thread/8f70cec7/) then you can edit cc-tool/programmer/cc_programmer.cpp and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file and recompile the tool by running ```make``` in the cc-tool directory.
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
   * Install mmtune (which tunes the radio frequency on the stick to best match your pump). Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
 ```
