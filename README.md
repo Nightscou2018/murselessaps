@@ -1,4 +1,4 @@
-# murselessaps - an openaps implemenation that's small enough that you can avoid carrying a murse (man-purse).
+# murselessaps - an openaps implemenation that's small enough for murse avoidance
 
 ![murse photo](http://ecx.images-amazon.com/images/I/41V0l2-6V8L.jpg)
 
