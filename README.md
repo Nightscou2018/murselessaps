@@ -15,7 +15,7 @@ There are plenty of other setups to consider, so you should check them out [here
 * [Purchase List](http://amzn.com/w/10OD9UTHX6TTK) - buy this stuff (or something similar)
 * [Setting up Edison & TI Stick] (edison-sparkfun-tistick.md)
 * My current (non private) configuration and backups are over on [murseless] (https://github.com/jmatheson/murseless) for reference
-* Packaging the hardware to fit in your pocket
+* Putting it all together and put it in your pocket!
 
 These are all of the parts that we'll be putting together.
 ![1](./images/IMG_4376.JPG)
