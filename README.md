@@ -16,7 +16,7 @@ First this I did was take the dremel to the TI-Stick and removed the pins all th
 ![1](./images/IMG_4377.JPG)
 
 Second thing I did was use an exacto knife (razor blade) or sharp knife to cut back the edge of micro USB cable. This will give us enough room to plug everything in. Sorry it's blurry.
-![1](./images/IMG_4378.JPG)
+![1](./images/IMG_4379.JPG)
 
 These are all of the parts that we'll be putting together.
 ![1](./images/IMG_4376.JPG)
