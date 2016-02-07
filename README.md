@@ -8,7 +8,9 @@
 3. Have  a full day (8-10 hours) of battery life (ok, I wanted longer but that's what I got)
 
 I used a combination of the TI stick, Intel Edison and Sparkfun base board, a battery that has pass-through charging (so you can charger it will keeping your Edison up and running), along with a few other tools and connectors. I was able to order everything from Amazon using Same Day delivery options except the TI Stick and CC Debugger which I got from ti.com. They have default shipping of 2 day air for $7.
-* [Purchase List](http://amzn.com/w/10OD9UTHX6TTK)
+
+###The process
+* [Purchase List](http://amzn.com/w/10OD9UTHX6TTK) - buy this stuff (or something similar)
 * [Setting up Edison & TI Stick] (edison-sparkfun-tistick.md)
 * My non private configuration and backups are over on [murseless] (https://github.com/jmatheson/murseless)
 * Packaging the hardware to fit in your pocket
