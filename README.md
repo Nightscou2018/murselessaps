@@ -47,7 +47,3 @@ Finally I covered it all with the sports tape I purchased. You can see I left th
 
 The finished product fits right into my pocket and you can see the size here compared to my iPhone6s and pump.
 ![1](./images/IMG_4389.JPG)
-
-
-
-
