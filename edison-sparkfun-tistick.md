@@ -7,6 +7,7 @@ There are plenty of other setups to consider, so you should check them out [here
   * [Prepare the Edison for OpenAPS] (https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
   * [Install OpenAPS] (https://github.com/openaps/docs) by starting at Section 1, Point 4. 
   * Optional: Set up your wifi for [smart switching to home network] (https://github.com/TC2013/edison_wifi)
+  * Activate your power button on the Sparkfun ```sudo apt-get install -y acpid```. This will allow you to shutdown the edison safely before battery swaps, etc.
   * Note, my setup using a Dexcom G5 which is connected to the G5 ios app via Ble, then to Nightscout via Share. My openaps implentation pulls BG values from NS. I do not have a Dexcom Receiver as part of the setup, nor can I do offline mode at this time. TODO: use Ble on the Edison to receive BG values from the Dexcom G5 transmitted directly.
 2. Set up your TI Stick
   * Write the firmware to the TI-stick
