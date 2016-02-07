@@ -11,3 +11,22 @@ I used a combination of the TI stick, Intel Edison and Sparkfun base board, a ba
 * [Purchase List](http://amzn.com/w/10OD9UTHX6TTK)
 * [Setting up Edison & TI Stick] (edison-sparkfun-tistick.md)
 * Packaging the hardware to fit in your pocket - COMING SOON
+
+(images/IMG_4376.JPG)
+(images/IMG_4377.JPG)
+(images/IMG_4378.JPG)
+(images/IMG_4379.JPG)
+(images/IMG_4380.JPG)
+(images/IMG_4381.JPG)
+(images/IMG_4382.JPG)
+(images/IMG_4383.JPG)
+(images/IMG_4384.JPG)
+(images/IMG_4385.JPG)
+(images/IMG_4386.JPG)
+(images/IMG_4387.JPG)
+(images/IMG_4388.JPG)
+(images/IMG_4389.JPG)
+
+
+
+
