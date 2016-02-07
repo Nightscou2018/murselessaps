@@ -12,14 +12,14 @@ I used a combination of the TI stick, Intel Edison and Sparkfun base board, a ba
 * [Setting up Edison & TI Stick] (edison-sparkfun-tistick.md)
 * Packaging the hardware to fit in your pocket
 
+These are all of the parts that we'll be putting together.
+![1](./images/IMG_4376.JPG)
+
 First this I did was take the dremel to the TI-Stick and removed the pins all the way down to the board. Notice that I left the debug pins in place since they were not in the way and we may (but hopefully not) need to flash again later using the debugger.
 ![1](./images/IMG_4377.JPG)
 
 Second thing I did was use an exacto knife (razor blade) or sharp knife to cut back the edge of micro USB cable. This will give us enough room to plug everything in. Sorry it's blurry.
 ![1](./images/IMG_4379.JPG)
-
-These are all of the parts that we'll be putting together.
-![1](./images/IMG_4376.JPG)
 
 Next I put the tiny micro usb into the OTG port.
 Then I put the white micro usb into the console port.
