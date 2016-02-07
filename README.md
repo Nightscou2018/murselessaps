@@ -25,10 +25,10 @@ Next I put the tiny micro usb into the OTG port.
 Then I put the white micro usb into the console port.
 Then I plugged in the TI stick.
 Also plug the Edison into the Sparkfun base board if not already done.
-![1](./images/IMG_4380.JPG)
+![1](./images/IMG_4381.JPG)
 
 Next I used the special cloth electrical tape to tape right across the USB device to the battery.
-![1](./images/IMG_4381.JPG)
+![1](./images/IMG_4382.JPG)
 
 
 ![1](./images/IMG_4383.JPG)
