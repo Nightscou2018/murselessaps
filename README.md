@@ -35,8 +35,8 @@ Next I used the special cloth electrical tape to tape right across the USB devic
 ![1](./images/IMG_4384.JPG)
 ![1](./images/IMG_4385.JPG)
 ![1](./images/IMG_4386.JPG)
-![1](./images/IMG_4387.JPG)
-![1](./images/IMG_4388.JPG)
+
+The finished product fits right into my pocket and you can see the size here compared to my iPhone6s and pump.
 ![1](./images/IMG_4389.JPG)
 
 
