@@ -27,12 +27,16 @@ Then I plugged in the TI stick.
 Also plug the Edison into the Sparkfun base board if not already done.
 ![1](./images/IMG_4381.JPG)
 
-Next I used the special cloth electrical tape to tape right across the USB device to the battery.
+I wrapped up the usb cord and tied it with a twist tie I had from my new dremel packaging. I used the special cloth electrical tape to tape right across the USB device to the battery.
 ![1](./images/IMG_4382.JPG)
 
-
+I did not buy any bolt kit from Sparkfun, so instead i rolled up some tape to the right thickness to evenly pad between the edison and the sparkfun, and the sparkfun and the battery.
 ![1](./images/IMG_4383.JPG)
+
+Then I got a little crazy with the heat tape.
 ![1](./images/IMG_4384.JPG)
+
+Finally I covered it all with the sports tape I purchased. You can see I left the bottom open so there was a place for a little air flow to the Edison as well as leave the bottom open for pass-through charging of the battery.
 ![1](./images/IMG_4385.JPG)
 ![1](./images/IMG_4386.JPG)
 
