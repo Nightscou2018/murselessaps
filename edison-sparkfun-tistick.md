@@ -10,11 +10,11 @@ There are plenty of other setups to consider, so you should check them out [here
   * Activate your power button on the Sparkfun ```sudo apt-get install -y acpid```. This will allow you to shutdown the edison safely before battery swaps, etc.
   * Note, my setup using a Dexcom G5 which is connected to the G5 ios app via Ble, then to Nightscout via Share. My openaps implentation pulls BG values from NS. I do not have a Dexcom Receiver as part of the setup, nor can I do offline mode at this time. TODO: use Ble on the Edison to receive BG values from the Dexcom G5 transmitted directly.
 2. Set up your TI Stick
-  * Write the firmware to the TI-stick
+  * Write the firmware to the TI-stick using cc-tool on Linux as described below (PC/Mac are other options which can use the [TI Flash Programmer Tool instead] (http://www.ti.com/tool/flash-programmer))
     * Download CC-Tool ```wget http://downloads.sourceforge.net/project/cctool/cc-tool-0.26-src.tgz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcctool%2F&ts=1454912359&use_mirror=tcpdiag -O cc-tool-0.26-src.tgz```, then unzip it ```tar xvfz cc-tool-0.26-src.tgz```
     * Edit ```vi cc-tool/programmer/cc_programmer.cpp``` and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file.
     * Install it with ```cd cc-tool``` then ```./configure``` then  ```make```
-    * Install a few other needed items with ```sudo apt-get install libusb-1.0-0-dev libboost-all-dev sdcc```. PC/Mac are other options which can use the [TI Flash Programmer Tool instead] (http://www.ti.com/tool/flash-programmer).
+    * Install a few other needed items with ```sudo apt-get install libusb-1.0-0-dev libboost-all-dev sdcc```. 
     * Grab the [current hex file](https://github.com/ps2/subg_rfspy/releases) which you plan to flash onto the TI stick. If you are in the US and for our TI stick here it'd be usb_ep0_TI_DONGLE_US_STDLOC.hex.
     * Plug your CC-Debugger that you purchased or borrowed into your your machine running CC-Tool or TI Flash Programmer Tool.
     * Plug your TI stick's USB into power.
