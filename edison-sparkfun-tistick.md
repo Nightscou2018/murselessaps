@@ -2,7 +2,6 @@
 # Set up Edison + TI Stick
 There are plenty of other setups to consider, so you should check them out [here](https://github.com/oskarpearson/mmeowlink/wiki) and [here](https://github.com/openaps/docs).
 
-###Getting the software set up
 1. Set up your Edison
   * Activate your power button on your board with ```sudo apt-get install -y acpid```. This will allow you to restart the board safely when asked during the flashing of the Edison process
   * [Prepare the Edison for OpenAPS] (https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
