@@ -10,8 +10,8 @@ There are plenty of other setups to consider, so you should check them out [here
   * Activate your power button. We did this earlier, but we blew that away when we flashed, so let's do it again with  ```sudo apt-get install -y acpid```. This will allow you to shutdown the edison safely before battery swaps, etc.
 
 ##2. Write the firmware to the TI-stick using cc-tool on Linux
-    * Download CC-Tool ```wget http://downloads.sourceforge.net/project/cctool/cc-tool-0.26-src.tgz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcctool%2F&ts=1454912359&use_mirror=tcpdiag -O cc-tool-0.26-src.tgz```, then unzip it ```tar xvfz cc-tool-0.26-src.tgz```
-    * Edit ```vi cc-tool/programmer/cc_programmer.cpp``` and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file.
+  * Download CC-Tool ```wget http://downloads.sourceforge.net/project/cctool/cc-tool-0.26-src.tgz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcctool%2F&ts=1454912359&use_mirror=tcpdiag -O cc-tool-0.26-src.tgz```, then unzip it ```tar xvfz cc-tool-0.26-src.tgz```
+  * Edit ```vi cc-tool/programmer/cc_programmer.cpp``` and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file.
     * Install it with ```cd cc-tool``` then ```./configure``` then  ```make```
     * Install a few other needed items with ```sudo apt-get install libusb-1.0-0-dev libboost-all-dev sdcc```. 
     * Grab the [current hex file](https://github.com/ps2/subg_rfspy/releases) which you plan to flash onto the TI stick. If you are in the US and for our TI stick here it'd be usb_ep0_TI_DONGLE_US_STDLOC.hex.
