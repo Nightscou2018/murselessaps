@@ -1,5 +1,5 @@
 
-# Set up Edison + Sparkfun Base Board + TI Stick
+# Set up Edison + TI Stick
 There are plenty of other setups to consider, so you should check them out [here](https://github.com/oskarpearson/mmeowlink/wiki) and [here](https://github.com/openaps/docs).
 
 ###Getting the software set up
