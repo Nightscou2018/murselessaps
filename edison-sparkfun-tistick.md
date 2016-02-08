@@ -20,8 +20,10 @@ There are plenty of other setups to consider, so you should check them out [here
   * Plug the other end onto your TI stick labeled DEBUG with the right stripe inwards towards the USB end of the board.
   * Press the reset button on your CC-Debugger. Make sure it is a green light before moving on.
   * Flash it with ```sudo cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex```
+
 ##3. Install MMeowlink
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
+
 ##4. Install mmtune
 Note: Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
 ```
