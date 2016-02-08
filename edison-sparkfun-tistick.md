@@ -2,13 +2,13 @@
 # Set up Edison + TI Stick
 There are plenty of other setups to consider, so you should check them out [here](https://github.com/oskarpearson/mmeowlink/wiki) and [here](https://github.com/openaps/docs).
 
-1. Set up your Edison
+##1. Set up your Edison
   * Activate your power button on your board with ```sudo apt-get install -y acpid```. This will allow you to restart the board safely when asked during the flashing of the Edison process
   * [Prepare the Edison for OpenAPS] (https://github.com/oskarpearson/mmeowlink/wiki/Prepare-the-Edison-for-OpenAPS)
   * [Install OpenAPS] (https://github.com/openaps/docs) by starting at Section 1, Point 4. 
   * Optional: Set up your wifi for [smart switching to home network] (https://github.com/TC2013/edison_wifi)
   * Activate your power button. We did this earlier, but we blew that away when we flashed, so let's do it again with  ```sudo apt-get install -y acpid```. This will allow you to shutdown the edison safely before battery swaps, etc.
-2. Write the firmware to the TI-stick using cc-tool on Linux as described below (PC/Mac are other options which can use the [TI Flash Programmer Tool instead] (http://www.ti.com/tool/flash-programmer))
+##2. Write the firmware to the TI-stick using cc-tool on Linux
     * Download CC-Tool ```wget http://downloads.sourceforge.net/project/cctool/cc-tool-0.26-src.tgz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcctool%2F&ts=1454912359&use_mirror=tcpdiag -O cc-tool-0.26-src.tgz```, then unzip it ```tar xvfz cc-tool-0.26-src.tgz```
     * Edit ```vi cc-tool/programmer/cc_programmer.cpp``` and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file.
     * Install it with ```cd cc-tool``` then ```./configure``` then  ```make```
