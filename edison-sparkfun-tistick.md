@@ -22,7 +22,7 @@ There are plenty of other setups to consider, so you should check them out [here
     * Press the reset button on your CC-Debugger. Make sure it is a green light before moving on.
     * Flash it. If using Linux that'd be ```sudo cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex```
   * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
-  * Install mmtune (which tunes the radio frequency on the stick to best match your pump). Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
+  * Install and set up mmtune using the set of commands below (which tunes the radio frequency on the stick to best match your pump). Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
 ```
 git clone https://github.com/ps2/minimed_rf
 cd minimed_rf
