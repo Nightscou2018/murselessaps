@@ -8,8 +8,6 @@ There are plenty of other setups to consider, so you should check them out [here
   * [Install OpenAPS] (https://github.com/openaps/docs) by starting at Section 1, Point 4. 
   * Optional: Set up your wifi for [smart switching to home network] (https://github.com/TC2013/edison_wifi)
   * Activate your power button on the Sparkfun ```sudo apt-get install -y acpid```. This will allow you to shutdown the edison safely before battery swaps, etc.
-  * Note, my setup using a Dexcom G5 which is connected to the G5 ios app via Ble, then to Nightscout via Share. My openaps implentation pulls BG values from NS. I do not have a Dexcom Receiver as part of the setup, nor can I do offline mode at this time. TODO: use Ble on the Edison to receive BG values from the Dexcom G5 transmitted directly.
-2. Set up your TI Stick
   * Write the firmware to the TI-stick using cc-tool on Linux as described below (PC/Mac are other options which can use the [TI Flash Programmer Tool instead] (http://www.ti.com/tool/flash-programmer))
     * Download CC-Tool ```wget http://downloads.sourceforge.net/project/cctool/cc-tool-0.26-src.tgz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcctool%2F&ts=1454912359&use_mirror=tcpdiag -O cc-tool-0.26-src.tgz```, then unzip it ```tar xvfz cc-tool-0.26-src.tgz```
     * Edit ```vi cc-tool/programmer/cc_programmer.cpp``` and change the line ```USB_SET_CHIP_INFO, 1, 1, &command[0], command.size());``` to ```USB_SET_CHIP_INFO, 1, 0, &command[0], command.size());``` then save the file.
