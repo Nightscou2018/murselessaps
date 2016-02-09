@@ -21,5 +21,6 @@ There are plenty of other setups to consider, so you should check them out [here
   * Press the reset button on your CC-Debugger. Make sure it is a green light before moving on.
   * Flash it with ```sudo cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex```
 
-##3. [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
-##4. [Install mmtune] (https://github.com/oskarpearson/mmeowlink/wiki/Tuning-your-connection-with-mmtune)
+##3. Final steps. Prep Edison to talk with the TI Stick
+  * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink)
+  * [Install mmtune] (https://github.com/oskarpearson/mmeowlink/wiki/Tuning-your-connection-with-mmtune)
