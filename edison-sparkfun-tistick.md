@@ -21,23 +21,5 @@ There are plenty of other setups to consider, so you should check them out [here
   * Press the reset button on your CC-Debugger. Make sure it is a green light before moving on.
   * Flash it with ```sudo cc-tool --log install.log -ew FILE-YOU-JUST-GRABBED.hex```
 
-##3. Install MMeowlink
-  * [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
-
-##4. Install mmtune
-Note: Replace XXXXXX with your pump id. If that port is incorrect for you, just `ls /dev/tty*`, then unplug the TI stick and run `ls /dev/tty*` again to see what the name of the port should be changed to.
-```
-git clone https://github.com/ps2/minimed_rf
-cd minimed_rf
-Sudo apt-get install ruby-full
-sudo gem install bundler
-bundle
-ruby -I lib bin/mmtune /dev/ttyACM0 XXXXX
-
-If not working, you may need:
-Apt-get ruby-colorize
-gem install serialport
-```
-  * Add mmtune to your aliases ```openaps alias add mmtune "! bash -c \"cd ~/src/minimed_rf/ && ruby -I lib bin/mmtune /dev/ttyACM0 XXXXXX | egrep -v 'rssi:|OK|Ver|Open'\""```
-  * Run the tuner to make sure it works and to set up a frequency for the first time ```openaps mmtune```. It may show errors, but if it gives a frequency it's probably safe to ignore the errors.
-  * Optional: Add the tuner as part of your preflight loop to get the best connection every time. ```openaps alias add preflight '! bash -c "echo -n \"mmtune: \" && openaps mmtune && echo -n \"PREFLIGHT \" && openaps report invoke monitor/temp_basal.json 2>/dev/null >/dev/null && echo -n \"OK, temp duration check \" && cat monitor/temp_basal.json | json -c \"this.duration < 25\" | grep -q duration && echo OK || ( echo FAIL; sleep 120; exit 1 )"'```. Be sure to remove your old preflight if you have one first and then make sure it's added into whatever your cron sequence is. Also, make sure to switch temp_basal.json to whatever your temp basal file is called/located.
+##3. [Install MMeowlink] (https://github.com/oskarpearson/mmeowlink/wiki/Installing-MMeowlink) onto your Edison.
+##4. [Install mmtune] (https://github.com/oskarpearson/mmeowlink/wiki/Tuning-your-connection-with-mmtune)
