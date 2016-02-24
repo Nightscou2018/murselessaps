@@ -4,6 +4,7 @@
 * [RileyLink](https://github.com/ps2/rileylink) (talk to Medtronic pump w/o a linux box)
 * [MMeowlink](https://github.com/oskarpearson/mmeowlink/wiki) (Edison and TI-11XX solutions)
 * [LoopKit](https://github.com/loudnate/LoopKit) (for iOS)
-*[ xDripG5](https://github.com/loudnate/xDripG5) (read BG to iOS from Dexcom G5)
+* [xDripG5](https://github.com/loudnate/xDripG5) (read BG to iOS from Dexcom G5)
+* [openxsharable](https://github.com/bewest/openxshareble) (connect Dexcom G4 with Share via Ble)
 * [pingRF](https://github.com/mariusae/pingrf) (for Animas Ping)
 * [Edison Wifi](https://github.com/TC2013/edison_wifi) (maintain home wifi connection)
